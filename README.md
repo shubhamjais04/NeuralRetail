@@ -77,10 +77,12 @@ pip install -r requirements.txt
 ```
 
 ### 3. Run the notebooks in order
+```
 notebooks/01_EDA.ipynb
 notebooks/02_feature_engineering.ipynb
 notebooks/03_model_training.ipynb
 notebooks/04_drift_detection.ipynb
+```
 
 ### 4. Launch dashboard
 ```bash
