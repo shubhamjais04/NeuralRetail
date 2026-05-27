@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# MLflow runs (too large)
+mlflow_runs/
+
+# Environment variables
+.env
+
+# Large data files
+data/Online_Retail.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
