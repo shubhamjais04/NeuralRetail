@@ -24,20 +24,23 @@ NeuralRetail is an end-to-end AI-powered sales intelligence platform built durin
 ---
 
 ## 🏗️ Project Structure
+
+```
 NeuralRetail/
-├── data/                         # Datasets
+├── data/                              # Datasets
 ├── notebooks/
-│   ├── 01_EDA.ipynb              # Exploratory Data Analysis
-│   ├── 02_feature_engineering.ipynb  # RFM + Lag Features
-│   ├── 03_model_training.ipynb   # XGBoost + Forecasting
-│   └── 04_drift_detection.ipynb  # Evidently AI Drift
+│   ├── 01_EDA.ipynb                   # Exploratory Data Analysis
+│   ├── 02_feature_engineering.ipynb   # RFM + Lag Features
+│   ├── 03_model_training.ipynb        # XGBoost + Forecasting
+│   └── 04_drift_detection.ipynb       # Evidently AI Drift
 ├── src/
-│   ├── models/                   # Saved ML models
-│   └── api/main.py               # FastAPI scoring API
-├── dashboard/app.py              # Streamlit 5-page dashboard
-├── evidently_reports/            # Drift + EDA reports
-├── mlflow_runs/                  # MLflow experiment logs
+│   ├── models/                        # Saved ML models
+│   └── api/main.py                    # FastAPI scoring API
+├── dashboard/app.py                   # Streamlit dashboard
+├── evidently_reports/                 # Drift + EDA reports
+├── mlflow_runs/                       # MLflow experiment logs
 └── requirements.txt
+```
 ---
 
 ## 🤖 ML Models
