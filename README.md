@@ -115,6 +115,6 @@ API docs: http://localhost:8000/docs
 ---
 
 ## 👨‍💻 Author
-**Shubham Jaiswal**
-Data Science Intern — Amdox Technologies
+**Shubham Jaiswal**  
+Data Science Intern — Amdox Technologies  
 [GitHub](https://github.com/shubhamjais04) | [LinkedIn](https://linkedin.com/in/shubhjais04)
