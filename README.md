@@ -29,19 +29,33 @@ NeuralRetail is an end-to-end AI-powered sales intelligence platform built durin
 
 ```
 NeuralRetail/
-├── data/                              # Datasets
+├── data/
+│   ├── online_retail_clean.csv
+│   ├── rfm_features.csv
+│   ├── daily_sales_features.csv
+│   ├── forecast_results.csv
+│   └── Online_Retail.xlsx
 ├── notebooks/
-│   ├── 01_EDA.ipynb                   # Exploratory Data Analysis
-│   ├── 02_feature_engineering.ipynb   # RFM + Lag Features
-│   ├── 03_model_training.ipynb        # XGBoost + Forecasting
-│   └── 04_drift_detection.ipynb       # Evidently AI Drift
+│   ├── 01_EDA.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_training.ipynb
+│   └── 04_drift_detection.ipynb
 ├── src/
-│   ├── models/                        # Saved ML models
-│   └── api/main.py                    # FastAPI scoring API
-├── dashboard/app.py                   # Streamlit dashboard
-├── evidently_reports/                 # Drift + EDA reports
-├── mlflow_runs/                       # MLflow experiment logs
-└── requirements.txt
+│   ├── api/
+│   ├── features/
+│   ├── ingestion/
+│   └── models/
+├── dashboard/
+│   ├── app.py
+│   └── requirements.txt
+├── evidently_reports/
+├── mlflow_runs/
+├── tests/
+├── .gitignore
+├── .python-version
+├── runtime.txt
+├── requirements.txt
+└── README.md
 ```
 ---
 
@@ -97,8 +111,7 @@ streamlit run app.py
 cd src/api
 uvicorn main:app --reload --port 8000
 ```
-API docs: http://localhost:8000/docs
-
+API docs: Run uvicorn main:app --reload locally and visit http://localhost:8000/docs
 ---
 
 ## 🛠️ Tech Stack
