@@ -1,5 +1,7 @@
 # 🛍️ NeuralRetail — AI Sales Intelligence Platform
 ### Amdox Technologies | Data Science & Analytics | April 2026
+## 🌐 Live Demo
+👉 [Click here to view the live dashboard](https://neuralretail-amdox.streamlit.app)
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red)
