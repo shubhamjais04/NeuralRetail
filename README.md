@@ -1,27 +1,75 @@
 # 🛍️ NeuralRetail — AI Sales Intelligence Platform
-### Amdox Technologies | Data Science & Analytics | April 2026
-## 🌐 Live Demo
-👉 [Click here to view the live dashboard](https://neuralretail-amdox.streamlit.app)
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red)
-![XGBoost](https://img.shields.io/badge/XGBoost-2.0-orange)
-![MLflow](https://img.shields.io/badge/MLflow-2.13-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.111-green)
+<p align="center">
+  <img src="assets/screenshots/executive_overview.png" alt="NeuralRetail Dashboard" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="https://neuralretail-amdox.streamlit.app">
+    <img src="https://img.shields.io/badge/🚀 Live Demo-Streamlit-FF4B4B?style=for-the-badge" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/shubhamjais04/NeuralRetail">
+    <img src="https://img.shields.io/badge/GitHub-NeuralRetail-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/XGBoost-Churn_Model-EC6C25?style=for-the-badge" alt="XGBoost"/>
+</p>
 
 ---
 
 ## 📌 Project Overview
-NeuralRetail is an end-to-end AI-powered sales intelligence platform built during my Data Science internship at **Amdox Technologies**. It ingests retail transactional data to produce demand forecasts, customer intelligence, churn predictions, and inventory insights — all served through an interactive Streamlit dashboard and REST API.
+
+**NeuralRetail** is an end-to-end AI-powered sales intelligence platform built during my Data Science internship at **Amdox Technologies**. It ingests retail transactional data to produce demand forecasts, customer segmentation, churn predictions, and model tracking — all served through an interactive 5-page Streamlit dashboard and a REST API.
+
+> **Dataset:** UCI Online Retail Dataset — 541,909 transactions across 38 countries (2010–2011)
 
 ---
 
 ## 🎯 Business Impact
-| Objective | Metric | Target |
-|---|---|---|
-| Churn Reduction | AUC-ROC | ≥ 0.90 |
-| Forecast Accuracy | MAPE | ≤ 10% |
-| Customer Segments | Silhouette Score | ≥ 0.55 |
+
+| Objective | Algorithm | Metric | Target |
+|-----------|-----------|--------|--------|
+| Churn Reduction | XGBoost + LightGBM | AUC-ROC | ≥ 0.90 |
+| Forecast Accuracy | Linear Regression + Lag Features | MAPE | ≤ 10% |
+| Customer Segmentation | K-Means RFM | Silhouette Score | ≥ 0.55 |
+
+---
+
+## 📸 Dashboard Screenshots
+
+### 📊 Executive Overview — KPIs & Revenue Trends
+<img src="assets/screenshots/executive_overview.png" width="100%"/>
+
+---
+
+### 📈 Demand Forecast — Actual vs Predicted Revenue
+<img src="assets/screenshots/demand_forecast.png" width="100%"/>
+
+---
+
+### 👥 Customer Intelligence — RFM Segmentation
+<img src="assets/screenshots/customer_intelligence.png" width="100%"/>
+
+---
+
+### ⚠️ Churn Risk Analysis — Risk Levels & SHAP Explainability
+<img src="assets/screenshots/churn_risk.png" width="100%"/>
+
+---
+
+### 🧪 Model Tracker — MLflow Experiments & Model Files
+<img src="assets/screenshots/model_tracker.png" width="100%"/>
+
+---
+
+## 🤖 ML Models
+
+| Model | Task | Algorithm | Metric |
+|-------|------|-----------|--------|
+| Churn Prediction | Classification | XGBoost + LightGBM | AUC-ROC |
+| Demand Forecasting | Regression | Linear Regression + Lag Features | MAPE |
+| Customer Segmentation | Clustering | K-Means RFM | Silhouette Score |
 
 ---
 
@@ -29,6 +77,8 @@ NeuralRetail is an end-to-end AI-powered sales intelligence platform built durin
 
 ```
 NeuralRetail/
+├── assets/
+│   └── screenshots/          ← Dashboard screenshots
 ├── data/
 │   ├── online_retail_clean.csv
 │   ├── rfm_features.csv
@@ -41,39 +91,18 @@ NeuralRetail/
 │   ├── 03_model_training.ipynb
 │   └── 04_drift_detection.ipynb
 ├── src/
-│   ├── api/
+│   ├── api/                  ← FastAPI REST API
 │   ├── features/
 │   ├── ingestion/
-│   └── models/
+│   └── models/               ← Trained .pkl model files
 ├── dashboard/
-│   ├── app.py
+│   ├── app.py                ← Main Streamlit dashboard
 │   └── requirements.txt
-├── evidently_reports/
-├── mlflow_runs/
-├── tests/
-├── .gitignore
-├── .python-version
-├── runtime.txt
+├── evidently_reports/        ← Drift detection reports
+├── mlflow_runs/              ← MLflow experiment tracking
 ├── requirements.txt
 └── README.md
 ```
----
-
-## 🤖 ML Models
-| Model | Task | Algorithm | Metric |
-|---|---|---|---|
-| Churn Prediction | Classification | XGBoost + LightGBM | AUC-ROC |
-| Demand Forecasting | Regression | Linear Regression + Lag Features | MAPE |
-| Customer Segmentation | Clustering | K-Means RFM | Silhouette |
-
----
-
-## 📊 Dashboard Pages
-1. **Executive Overview** — KPIs, revenue trends, top products
-2. **Demand Forecast** — Actual vs predicted revenue
-3. **Customer Intelligence** — RFM segments, distributions
-4. **Churn Risk Analysis** — Risk levels, SHAP explainability
-5. **Model Tracker** — MLflow experiments, model files
 
 ---
 
@@ -100,23 +129,25 @@ notebooks/03_model_training.ipynb
 notebooks/04_drift_detection.ipynb
 ```
 
-### 4. Launch dashboard
+### 4. Launch the dashboard
 ```bash
 cd dashboard
 streamlit run app.py
 ```
 
-### 5. Launch API
+### 5. Launch the API
 ```bash
 cd src/api
 uvicorn main:app --reload --port 8000
 ```
-API docs: Run uvicorn main:app --reload locally and visit http://localhost:8000/docs
+API docs available at: `http://localhost:8000/docs`
+
 ---
 
 ## 🛠️ Tech Stack
+
 | Layer | Technology |
-|---|---|
+|-------|------------|
 | Language | Python 3.12 |
 | ML Models | XGBoost, LightGBM, Scikit-learn |
 | Explainability | SHAP |
@@ -129,7 +160,16 @@ API docs: Run uvicorn main:app --reload locally and visit http://localhost:8000/
 
 ---
 
+## 🌐 Live Demo
+
+👉 **[neuralretail-amdox.streamlit.app](https://neuralretail-amdox.streamlit.app)**
+
+---
+
 ## 👨‍💻 Author
-**Shubham Jaiswal**  
-Data Science Intern — Amdox Technologies  
-[GitHub](https://github.com/shubhamjais04) | [LinkedIn](https://linkedin.com/in/shubhjais04)
+
+**Shubham Jaiswal**
+Data Science Intern — Amdox Technologies
+
+[![GitHub](https://img.shields.io/badge/GitHub-shubhamjais04-181717?style=flat&logo=github)](https://github.com/shubhamjais04)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shubham_Jaiswal-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/shubhamjaiswal04)
