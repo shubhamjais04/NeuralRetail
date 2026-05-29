@@ -1,10 +1,6 @@
 # 🛍️ NeuralRetail — AI Sales Intelligence Platform
 
 <p align="center">
-  <img src="assets/screenshots/executive_overview.png" alt="NeuralRetail Dashboard" width="100%"/>
-</p>
-
-<p align="center">
   <a href="https://neuralretail-amdox.streamlit.app">
     <img src="https://img.shields.io/badge/🚀 Live Demo-Streamlit-FF4B4B?style=for-the-badge" alt="Live Demo"/>
   </a>
