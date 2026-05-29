@@ -513,11 +513,13 @@ elif page == "🧪 Model Tracker":
     st.markdown("---")
     st.subheader("📁 Saved Model Files")
 
+    base = os.path.dirname(os.path.abspath(__file__))
+
     model_files = [
-        '../src/models/churn_model.pkl',
-        '../src/models/churn_features.pkl',
-        '../src/models/forecast_model.pkl',
-        '../src/models/forecast_features.pkl'
+        os.path.join(base, '../src/models/churn_model.pkl'),
+        os.path.join(base, '../src/models/churn_features.pkl'),
+        os.path.join(base, '../src/models/forecast_model.pkl'),
+        os.path.join(base, '../src/models/forecast_features.pkl'),
     ]
 
     for f in model_files:
@@ -536,8 +538,8 @@ elif page == "🧪 Model Tracker":
     # Evidently reports
     st.markdown("---")
     st.subheader("📊 Generated Reports")
-    report_files = os.listdir('../evidently_reports') \
-        if os.path.exists('../evidently_reports') else []
+    report_files = os.listdir(os.path.join(base, '../evidently_reports')) \
+        if os.path.exists(os.path.join(base, '../evidently_reports')) else []
 
     if report_files:
         for f in report_files:
