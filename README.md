@@ -165,7 +165,7 @@ API docs available at: `http://localhost:8000/docs`
 ## 👨‍💻 Author
 
 **Shubham Jaiswal**
-Data Science Intern — Amdox Technologies
+Data Science & Analytics Intern — Amdox Technologies
 
 [![GitHub](https://img.shields.io/badge/GitHub-shubhamjais04-181717?style=flat&logo=github)](https://github.com/shubhamjais04)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shubham_Jaiswal-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/shubhamjaiswal04)
