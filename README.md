@@ -14,6 +14,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+👉 **[neuralretail-amdox.streamlit.app](https://neuralretail-amdox.streamlit.app)**
+
+---
+
 ## 📌 Project Overview
 
 **NeuralRetail** is an end-to-end AI-powered sales intelligence platform built during my Data Science internship at **Amdox Technologies**. It ingests retail transactional data to produce demand forecasts, customer segmentation, churn predictions, and model tracking — all served through an interactive 5-page Streamlit dashboard and a REST API.
@@ -156,15 +162,9 @@ API docs available at: `http://localhost:8000/docs`
 
 ---
 
-## 🌐 Live Demo
-
-👉 **[neuralretail-amdox.streamlit.app](https://neuralretail-amdox.streamlit.app)**
-
----
-
 ## 👨‍💻 Author
 
-**Shubham Jaiswal**
+**Shubham Jaiswal**  
 Data Science & Analytics Intern — Amdox Technologies
 
 [![GitHub](https://img.shields.io/badge/GitHub-shubhamjais04-181717?style=flat&logo=github)](https://github.com/shubhamjais04)
