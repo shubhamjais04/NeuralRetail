@@ -92,6 +92,9 @@ NeuralRetail/
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_model_training.ipynb
 │   └── 04_drift_detection.ipynb
+├── reports/
+│   ├── NeuralRetail_Presentation.pptx
+│   └── NeuralRetail_Presentation.pdf
 ├── src/
 │   ├── api/                  ← FastAPI REST API
 │   ├── features/
