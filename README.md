@@ -185,6 +185,6 @@ API docs available at: `http://localhost:8000/docs`
 Data Science & Analytics Intern — Amdox Technologies
 
 [![GitHub](https://img.shields.io/badge/GitHub-shubhamjais04-181717?style=flat&logo=github)](https://github.com/shubhamjais04)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhjais.in@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-shubhjais.in@gmail.com-D14836?style=flat&logo=gmail)](mailto:shubhjais.in@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shubham_Jaiswal-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/shubhamjaiswal04)
 
