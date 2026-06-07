@@ -28,6 +28,19 @@
 
 ---
 
+## ✨ What's Built
+
+- 🧹 **Data Pipeline** — End-to-end EDA, cleaning, and preprocessing of retail sales data
+- 👥 **RFM Segmentation** — Recency, Frequency, Monetary customer segmentation and feature engineering
+- 🤖 **Churn Prediction** — XGBoost + LightGBM models trained to identify at-risk customers
+- 📈 **Demand Forecasting** — Linear Regression with lag features for sales trend prediction
+- 🔍 **Drift Detection** — Evidently AI integration for real-time data and model drift monitoring
+- 📊 **MLflow Tracking** — Full experiment tracking, model versioning, and performance logging
+- ⚡ **FastAPI Backend** — REST API for serving model predictions programmatically
+- 🖥️ **Streamlit Dashboard** — 5-page interactive dashboard for business intelligence
+
+---
+
 ## 🎯 Business Impact
 
 | Objective | Algorithm | Metric | Target |
@@ -35,33 +48,6 @@
 | Churn Reduction | XGBoost + LightGBM | AUC-ROC | ≥ 0.90 |
 | Forecast Accuracy | Linear Regression + Lag Features | MAPE | ≤ 10% |
 | Customer Segmentation | K-Means RFM | Silhouette Score | ≥ 0.55 |
-
----
-
-## 📸 Dashboard Screenshots
-
-### 📊 Executive Overview — KPIs & Revenue Trends
-<img src="assets/screenshots/executive_overview.png" width="100%"/>
-
----
-
-### 📈 Demand Forecast — Actual vs Predicted Revenue
-<img src="assets/screenshots/demand_forecast.png" width="100%"/>
-
----
-
-### 👥 Customer Intelligence — RFM Segmentation
-<img src="assets/screenshots/customer_intelligence.png" width="100%"/>
-
----
-
-### ⚠️ Churn Risk Analysis — Risk Levels & SHAP Explainability
-<img src="assets/screenshots/churn_risk.png" width="100%"/>
-
----
-
-### 🧪 Model Tracker — MLflow Experiments & Model Files
-<img src="assets/screenshots/model_tracker.png" width="100%"/>
 
 ---
 
@@ -110,6 +96,34 @@ NeuralRetail/
 ```
 
 ---
+
+## 📸 Dashboard Screenshots
+
+### 📊 Executive Overview — KPIs & Revenue Trends
+<img src="assets/screenshots/executive_overview.png" width="100%"/>
+
+---
+
+### 📈 Demand Forecast — Actual vs Predicted Revenue
+<img src="assets/screenshots/demand_forecast.png" width="100%"/>
+
+---
+
+### 👥 Customer Intelligence — RFM Segmentation
+<img src="assets/screenshots/customer_intelligence.png" width="100%"/>
+
+---
+
+### ⚠️ Churn Risk Analysis — Risk Levels & SHAP Explainability
+<img src="assets/screenshots/churn_risk.png" width="100%"/>
+
+---
+
+### 🧪 Model Tracker — MLflow Experiments & Model Files
+<img src="assets/screenshots/model_tracker.png" width="100%"/>
+
+---
+
 
 ## 🚀 How to Run Locally
 
@@ -171,4 +185,6 @@ API docs available at: `http://localhost:8000/docs`
 Data Science & Analytics Intern — Amdox Technologies
 
 [![GitHub](https://img.shields.io/badge/GitHub-shubhamjais04-181717?style=flat&logo=github)](https://github.com/shubhamjais04)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhjais.in@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shubham_Jaiswal-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/shubhamjaiswal04)
+
