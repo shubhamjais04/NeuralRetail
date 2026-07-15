@@ -78,6 +78,9 @@ NeuralRetail/
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_model_training.ipynb
 │   └── 04_drift_detection.ipynb
+├── powerbi/
+│   ├── dashboard_preview_neuralretail
+│   └── neuralretail_dashboard
 ├── reports/
 │   ├── NeuralRetail_Presentation.pptx
 │   └── NeuralRetail_Presentation.pdf
